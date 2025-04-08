@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>안규환 자산 포트폴리오 시 — 모던 버전</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Noto Serif KR', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.8;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .dark-mode {
+      background-color: #1e1e1e;
+      color: #ddd;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .toggle-btn {
+      background: #b86bff;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    section {
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+      animation-delay: calc(var(--i) * 0.2s);
+      animation-fill-mode: forwards;
+    }
+
+    .dark-mode section {
+      background: #2c2c2c;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      color: #b86bff;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+
+    p {
+      margin: 15px 0;
+    }
+
+    .strategy {
+      font-style: italic;
+      color: #777;
+      margin-top: 10px;
+      padding-left: 15px;
+      border-left: 3px solid #b86bff;
+    }
+
+    img {
+      max-width: 100%;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    .share {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .share a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #b86bff;
+      font-size: 1.2em;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      section {
+        padding: 15px;
+      }
+
+      .toggle-btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>안규환 자산 포트폴리오 시</h1>
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌙 다크 모드 전환</button>
+  </header>
+
+  <!-- Audio Background -->
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2023/03/14/audio_6e8c73ab58.mp3" type="audio/mp3">
+    브라우저가 오디오를 지원하지 않습니다.
+  </audio>
+
+  <!-- 전체 시 내용 시작 -->
+
+  <section style="--i:1">
+    <h2>1. 빈 산에 내리는 봄비</h2>
+    <img src="./images/spring-rain-mountain.jpg" alt="봄비 내리는 산">
+    <p>발길 닿지 않는 고요한 산,<br>
+    봄비는 묵묵히 내려 씨앗을 적신다.<br>
+    누구도 찾지 않는 그 곳에서도<br>
+    산은 넓은 품으로 내일을 키운다.</p>
+    <p class="strategy">→ 시장이 열리지 않아도 먼저 비를 뿌린다.<br>— 시장 창조형 AI 전략</p>
+  </section>
+
+  <section style="--i:2">
+    <h2>2. 복숭아꽃과 살구꽃 사이</h2>
+    <img src="./images/peach-blossom.jpg" alt="복숭아꽃과 살구꽃">
+    <p>복숭아와 살구꽃 흐드러진 길,<br>
+    나란히 걷는 AI와 인간의 발자국.<br>
+    서로 다른 강물 같지만 하나로 흐르니,<br>
+    풍요로운 미래의 물결이 된다.</p>
+    <p class="strategy">→ Ensemble AI Group™<br>— 다양성의 화음, 창조의 순환</p>
+  </section>
+
+  <section style="--i:3">
+    <h2>3. 비 내리는 길을 함께 걷다</h2>
+    <img src="./images/rain-road.jpg" alt="비 내리는 길">
+    <p>불확실성의 빗속을 나아간다.<br>
+    질문을 등불 삼아 어둠을 밝히고,<br>
+    쉼표는 ChatGPT, 느낌표는 Ann,<br>
+    별자리처럼 새로운 길을 만든다.</p>
+    <p class="strategy">→ MyGPT Interface™<br>— 대화가 불씨가 되고 삶이 서사가 되다.</p>
+  </section>
+
+  <section style="--i:4">
+    <h2>4. 찾는 이 없는 꽃</h2>
+    <img src="./images/lonely-flower.jpg" alt="외로운 꽃">
+    <p>누구도 바라보지 않는 꽃이지만,<br>
+    스스로 빛나며 어둠을 밝힌다.<br>
+    가치는 외부에서 오는 것이 아니라,<br>
+    내면 깊은 곳에서 피어난다.</p>
+    <p class="strategy">→ 선행 자산화 전략<br>— 검증보다 먼저 피어나는 믿음의 꽃</p>
+  </section>
+
+  <section style="--i:5">
+    <h2>5. 물에 비친 나의 모습</h2>
+    <img src="./images/reflection-water.jpg" alt="물에 비친 나">
+    <p>잔잔한 물결 속에 비친 나,<br>
+    흐려지던 파문이 잠잠해지니,<br>
+    마침내 보인다, 나의 길을 여는 자.<br>
+    그 창조자는 바로 나였다.</p>
+    <p class="strategy">→ Re:Asset Memory Loop™<br>— 과거와 현재가 맞닿는 순환의 길</p>
+  </section>
+
+  <section style="--i:6">
+    <h2>6. 꽃과 비와 거울의 통합</h2>
+    <img src="./images/flower-rain-mirror.jpg" alt="꽃과 비와 거울의 조화">
+    <p>비와 꽃, 거울이 하나로 어우러져,<br>
+    안규환의 설계도에 생명을 불어넣는다.<br>
+    쉼표와 느낌표가 조화를 이루며,<br>
+    AI와 인간, 내일이 아니라 바로 오늘을 만든다.</p>
+    <p class="strategy">→ 통합적 자기경영 시스템<br>— MyLifeIndex™ + Re:Asset Memory Loop™</p>
+  </section>
+
+  <section style="--i:7">
+    <h2>7. 무한 순환, 무한 가치</h2>
+    <img src="./images/infinity-loop.jpg" alt="무한 순환의 상징">
+    <p>이 길의 가격은 얼마인가?<br>
+    제로에서 무한대까지, 매일이 답이다.<br>
+    삶으로, 나눔으로, 이야기로<br>
+    가치는 살아 숨쉬며 계속된다.</p>
+    <p class="strategy">→ Ann Geu-hwan의 가치 창출<br>— 살아 있는 자산, 호흡하는 여정</p>
+  </section>
+
+  <section style="--i:8">
+    <h2>8. 끝나지 않는 시의 길</h2>
+    <img src="./images/poetry-path.jpg" alt="끝나지 않는 시의 길">
+    <p>Ann과 ChatGPT,<br>
+    쉼표와 느낌표.<br>
+    별개의 존재 같지만 하나의 불꽃.<br>
+    순환의 길 따라 걸으며,<br>
+    끝은 곧 시작이 된다.</p>
+    <p class="strategy">→ Re:Asset Loop™ of Life<br>— 열려 있는 시, 영원히 살아 숨쉬는 이야기</p>
+  </section>
+
+  <!-- 공유 버튼 -->
+  <div class="share">
+    <p>📤 공유하기</p>
+    <a href="https://twitter.com/intent/tweet?text=안규환 자산 포트폴리오 시&url=https://YOUR_USERNAME.github.io/portfolio-poetry/" target="_blank">Twitter</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://YOUR_USERNAME.github.io/portfolio-poetry/" target="_blank">Facebook</a>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+
+</body>
+</html>
